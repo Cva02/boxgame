@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catch the Box Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎮 Catch the Box!</h1>
+    <p id="instructions">Click the moving box to score points.</p>
+    <button id="start-button" onclick="startGame()">Start Game</button>
+    <div id="game-area">
+      <div id="moving-box" onclick="scorePoint()"></div>
+    </div>
+    <p id="score-display">Score: <span id="score">0</span></p>
+    <p id="timer-display">Time Left: <span id="timer">30</span>s</p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
